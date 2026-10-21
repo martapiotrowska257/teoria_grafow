@@ -65,7 +65,7 @@ def isomorphism(case):
     for u, v in edges_G:
         representation = tuple(sorted((f[u], f[v])))
         print(f"krawędź ({u},{v}) w G -> {representation} w H, czy istnieje w H:", representation in edges_H_set)
-        if obraz not in edges_H_set:
+        if representation not in edges_H_set:
             ok = False
     print("Wszystkie krawędzie się zgadzają:", ok)
 
